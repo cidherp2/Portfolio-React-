@@ -25,9 +25,11 @@
 #gitLogo{
   filter: invert(1);
 }
-
+#proyectsConti{
+  flex-basis: 100%;
+}
 #proyect-Center{
-  margin-left: 35%;
+  margin-left: 25%;
 }
 
 #projectsContainer{
@@ -37,6 +39,14 @@
 .myImage {
   display: block;
   width: 30%;
+  height: auto;
+  margin-right: 60px;
+  border-radius: 15px;
+}
+.myImage2 {
+  border: solid rgb(56, 55, 55) .5rem;
+  display: block;
+  width: 50%;
   height: auto;
   margin-right: 60px;
   border-radius: 15px;
