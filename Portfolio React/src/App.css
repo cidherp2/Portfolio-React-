@@ -1,0 +1,153 @@
+:root {
+  --favefont: monospace;
+  --granfuente: x-large;
+  --colorDefuente: rgb(141, 71, 206);
+  --sombra: 0 0 5px rgb(0 0 0 / 50%);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  gap: 1rem;
+}
+
+#linkedLogo{
+  filter: invert(1);
+}
+
+#gitLogo{
+  filter: invert(1);
+}
+
+.myImage {
+  display: block;
+  width: 30%;
+  height: auto;
+  margin-right: 60px;
+  border-radius: 15px;
+}
+
+.about-me {
+  text-align: justify;
+  font-size: larger;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.footer {
+  margin: 0 1rem;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15rem;
+}
+
+.footerText {
+  /* flex-basis: 90%; */
+  /* margin-right: 10rem; */
+  
+}
+
+.text-about {
+  flex-basis: 60%;
+  background-color:rgb(255, 255, 255);
+  border: solid rgb(224, 222, 222) .1rem;
+  padding: 1rem;
+  height: 50%;
+
+}
+
+.text-about p {
+  text-align: center;
+ 
+}
+
+.footerColor{
+  border-radius: 1rem;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  /* background-color: rgb(92, 91, 101); */
+  background-color: rgb(22, 22, 23);
+  flex-basis: auto;
+  width: 100rem;
+  height: 5rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-button {
+  color: black !important;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.main {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  gap: 1rem;
+
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255, .97);
+  box-shadow: var(--sombra);
+  border-bottom: solid rgb(224, 222, 222) .5px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.imageLogo {
+  width: 3%;
+  height: auto;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
