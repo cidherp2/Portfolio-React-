@@ -1,0 +1,13 @@
+[build]
+  base = "Portfolio React"
+
+  command = "npm run build"
+
+  publish = "Portfolio React"
+
+ [context.branch-deploy]
+ command = "npm run build"
+
+  publish = "Portfolio React"
+
+[context.branch-deploy]
