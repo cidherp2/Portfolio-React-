@@ -9,7 +9,7 @@ export default function Navbar({handleChange}) {
        <a href = "#portfolio">
         <Button className="nav-button" onClick={()=> handleChange('portfolio')} >Portfolio</Button>
         </a>
-        <Button className="nav-button">Contact</Button>
+        <Button className="nav-button" onClick={()=> handleChange('contact')} >Contact</Button>
      
       </>
     );

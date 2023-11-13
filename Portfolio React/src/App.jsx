@@ -4,11 +4,11 @@ import * as React from "react";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import Footer from "./Components/Footer";
 import Navbar from "../src/Components/Nav";
-
 import image2 from "./assets/linkedLogo2.png";
 import image3 from "./assets/githubLogo.png";
 import AboutMe from "./Components/pages/Abou-Me"
 import AboutMe2 from "./Components/pages/Abou-Me2"
+import ContactMe from "./Components/pages/ContactMe"
 //import AboutMe from "./Components/pages/Abou-Me";
 
 function App() {
@@ -20,6 +20,10 @@ function App() {
     else if (currentPage === 'portfolio'){
       return <AboutMe2/>
     }
+
+    else if (currentPage === 'contact'){
+      return <ContactMe/>
+    }
   };
 
   let handleChange = (page) => setCurrentPage(page);
@@ -27,6 +31,7 @@ function App() {
   
   return (
     <>
+    
     <div className="navbar"> {Navbar(handleChange={handleChange})}</div>
       {/* <Navbar handleChange = {handleChange}/> */}
       <div>{renderPage()}</div>
@@ -35,6 +40,7 @@ function App() {
       <div className="main"></div>
       <div className="about-me"> {AboutMe(alex)}</div> */}
       <div className="footer">{Footer("Alejandro Larios ©️ 2023", image2, image3)}</div>
+      
     </>
   );
 }
